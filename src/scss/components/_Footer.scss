@@ -4,9 +4,19 @@
   width: 100%;
   height: $footer-height;
   margin: 0;
-  padding: auto;
+  padding-top: 50px;
+  padding-bottom: 20px;
 
   text-align: center;
   color: white;
   background-color: $footer-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
 }

@@ -1,9 +1,15 @@
 @use '../utils/' as *;
 
 .logo {
+  &--white {
+    background: center no-repeat url('../../assets/logo-white.svg');
+  }
+
   width: $logo-width;
   height: $logo-height;
 
   background: center no-repeat url('../../assets/logo.svg');
   background-size: contain;
+
+  flex-shrink: 0;
 }

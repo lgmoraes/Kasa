@@ -1,7 +1,8 @@
 function Footer() {
   return (
     <footer className="footer">
-      <h1>Footer</h1>
+      <div className="logo logo--white"></div>
+      <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   )
 }
