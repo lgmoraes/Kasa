@@ -3,14 +3,17 @@ $color-accent: #f6f6f6;
 
 $font-primary: 'Montserrat', sans-serif;
 
-$header-height: 80px;
+$header-padding: 16px;
 
 $footer-height: 209px;
 $footer-color: black;
+
+$logo-width: 210px;
+$logo-height: 68px;
 
 $breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
+  xl: 1440px,
 );

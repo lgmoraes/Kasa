@@ -2,9 +2,25 @@
 
 /*** RESET CSS ***/
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+input:focus {
+  outline: none;
 }
 
 /*** LAYOUT ***/
@@ -16,8 +32,18 @@ body,
   margin: 0;
 }
 
+.header,
+.header + div {
+  width: 100%;
+  max-width: map-get($breakpoints, xl);
+}
+
 #root {
   overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header,
@@ -35,11 +61,6 @@ body {
   font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
 }
 
 .logo {
