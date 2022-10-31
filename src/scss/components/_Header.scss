@@ -1,6 +1,7 @@
 @use '../utils/' as *;
 
 .header {
+  height: $header-height;
   margin: 16px auto;
 
 }

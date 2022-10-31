@@ -1,6 +1,12 @@
 @use '../utils/' as *;
 
 .footer {
-  margin: 16px auto;
+  width: 100%;
+  height: $footer-height;
+  margin: 0;
+  padding: auto;
 
+  text-align: center;
+  color: white;
+  background-color: $footer-color;
 }

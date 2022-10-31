@@ -7,13 +7,39 @@ a {
   text-decoration: none;
 }
 
+/*** LAYOUT ***/
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  overflow-y: auto;
+}
+
+.header,
+.footer {
+  flex-shrink: 0;
+}
+
+.header + div {
+  flex-grow: 1;
+}
+
 /*** BASE ***/
 
 body {
   font-family: $font-primary;
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
