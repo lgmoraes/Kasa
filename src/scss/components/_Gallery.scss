@@ -1,0 +1,12 @@
+@use '../utils/' as *;
+
+.gallery {
+  padding: 2em 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px 60px;
+}

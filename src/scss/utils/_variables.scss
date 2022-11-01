@@ -1,15 +1,22 @@
 $color-primary: #ff6060;
 $color-accent: #f6f6f6;
+$color-background: white;
 
 $font-primary: 'Montserrat', sans-serif;
 
-$header-padding: 16px;
+$border-radius: 25px, 10px;
+
+$header-padding: 40px;
 
 $footer-height: 209px;
 $footer-color: black;
 
 $logo-width: 210px;
 $logo-height: 68px;
+
+$home-featuredPicture-height: 223px;
+
+$card-size: 340px;
 
 $breakpoints: (
   sm: 576px,

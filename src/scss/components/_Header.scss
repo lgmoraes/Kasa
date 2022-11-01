@@ -1,7 +1,7 @@
 @use '../utils/' as *;
 
 .header {
-  padding: $header-padding;
+  padding: $header-padding 100px;
 
   display: flex;
   flex-direction: row;
