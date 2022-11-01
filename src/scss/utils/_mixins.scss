@@ -1,5 +1,19 @@
 @use 'variables' as *;
 
+@mixin addColorLayer($color: rgba(0, 0, 0, 0.3)) {
+  &::after {
+    content: '';
+
+    background-color: $color;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 @mixin colorOption {
   &--red {
     background-color: $color-primary;

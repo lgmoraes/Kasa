@@ -4,6 +4,8 @@ $color-background: white;
 
 $font-primary: 'Montserrat', sans-serif;
 
+$margin: 30px;
+
 $border-radius: 25px, 10px;
 
 $header-padding: 40px;
@@ -14,9 +16,11 @@ $footer-color: black;
 $logo-width: 210px;
 $logo-height: 68px;
 
-$home-featuredPicture-height: 223px;
+$featuredPicture-height: 223px;
 
 $card-size: 340px;
+
+$dropdown-height: 47px;
 
 $breakpoints: (
   sm: 576px,

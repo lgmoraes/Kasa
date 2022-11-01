@@ -1,0 +1,19 @@
+@use '../utils/' as *;
+
+.apropos {
+  &__featuredPicture {
+    @include addColorLayer;
+    &::after {
+      border-radius: nth($border-radius, 1);
+    }
+
+    height: $featuredPicture-height;
+    margin-bottom: $margin 0;
+
+    background: center url('../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg');
+    background-size: cover;
+    border-radius: nth($border-radius, 1);
+
+    position: relative;
+  }
+}

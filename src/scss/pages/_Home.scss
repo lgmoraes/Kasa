@@ -2,20 +2,13 @@
 
 .home {
   &__featuredPicture {
-    &::before {
-      content: '';
-
-      background-color: rgba(0, 0, 0, 0.3);
+    @include addColorLayer;
+    &::after {
       border-radius: nth($border-radius, 1);
-
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
     }
-    height: $home-featuredPicture-height;
-    margin: 1em 0;
+
+    height: $featuredPicture-height;
+    margin-bottom: $margin 0;
 
     background: center url('../../assets/home-featuredPicture.jpg');
     background-size: cover;
@@ -27,7 +20,6 @@
     align-items: center;
 
     h1 {
-
       color: white;
       font-weight: 500;
       font-size: 48px;
