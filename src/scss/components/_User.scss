@@ -1,0 +1,21 @@
+@use '../utils/' as *;
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+
+  &__name p {
+    margin: 0;
+
+    line-height: 142.6%;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  &__picture {
+    width: $user-picture-size;
+    height: $user-picture-size;
+    border-radius: 100%;
+  }
+}

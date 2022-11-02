@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+.stars {
+  display: flex;
+  gap: 10px;
+
+  &__star {
+    &--empty {
+      background: center no-repeat url(../../assets/star-empty.svg);
+    }
+    width: $star-size;
+    height: $star-size;
+
+    background: center no-repeat url(../../assets/star.svg);
+    background-size: contain;
+  }
+}

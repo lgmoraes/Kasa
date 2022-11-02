@@ -1,0 +1,9 @@
+@use '../utils/' as *;
+
+.carousel {
+  height: 415px;
+  margin-bottom: $margin;
+
+  background-color: lightgrey;
+  border-radius: nth($border-radius , 1);
+}
