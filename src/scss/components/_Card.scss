@@ -14,11 +14,15 @@
     left: 0;
     bottom: 0;
   }
+  &:hover img {
+    transform: scale(1.1);
+  }
   width: $card-size;
   height: $card-size;
 
   color: white;
   border-radius: nth($border-radius, 2);
+  overflow: hidden;
 
   position: relative;
 
@@ -27,7 +31,7 @@
     height: 100%;
 
     object-fit: cover;
-    border-radius: nth($border-radius, 2);
+    transition: transform $animation-duration;
 
     position: absolute;
     top: 0;
