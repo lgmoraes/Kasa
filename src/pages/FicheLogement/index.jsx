@@ -38,19 +38,12 @@ function FicheLogement() {
         </Dropdown>
         <Dropdown open title={'Équipements'}>
           <p>
-            Climatisation
-            <br />
-            Wi-Fi
-            <br />
-            Cuisine
-            <br />
-            Espace de travail
-            <br />
-            Fer à repasser
-            <br />
-            Sèche-cheveux
-            <br />
-            Cintres
+            {accommodation.equipments.map((eq, index) => (
+              <span key={`equipement-${index}`}>
+                {eq}
+                <br />
+              </span>
+            ))}
           </p>
         </Dropdown>
       </div>
