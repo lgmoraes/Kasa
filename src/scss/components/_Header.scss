@@ -15,7 +15,7 @@
     flex-direction: row;
   }
   a {
-    &:hover {
+    &:hover, &.active {
       text-decoration: underline;
     }
     margin-left: 2em;
