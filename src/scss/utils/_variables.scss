@@ -10,25 +10,33 @@ $border-radius: 25px, 10px;
 
 $animation-duration: 0.3s;
 
-$header-padding: 40px;
-
-$footer-height: 209px;
-$footer-color: black;
-
-$logo-width: 210px;
-$logo-height: 68px;
-
-$featuredPicture-height: 223px;
-
-$card-size: 340px;
-$star-size: 30px;
-$user-picture-size: 64px;
-
-$dropdown-height: 47px;
-
 $breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1440px,
 );
+
+/* COMPONENTS */
+
+$card-size: 340px;
+
+$carousel-height: 415px;
+$carousel-padding: 10px;
+$carousel-arrow-size: 80px;
+
+$dropdown-height: 47px;
+
+$featuredPicture-height: 223px;
+
+$footer-height: 209px;
+$footer-color: black;
+
+$header-padding: 40px;
+
+$logo-width: 210px;
+$logo-height: 68px;
+
+$star-size: 30px;
+
+$user-picture-size: 64px;
