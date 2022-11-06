@@ -42,6 +42,7 @@
     font-weight: 500;
     border-radius: nth($border-radius, 2);
     cursor: pointer;
+    user-select: none;
 
     display: flex;
     justify-content: space-between;
