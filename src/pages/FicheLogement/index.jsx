@@ -33,10 +33,10 @@ function FicheLogement() {
         </div>
       </div>
       <div className="ficheLogement__layoutBottom">
-        <Dropdown open title={'Description'}>
+        <Dropdown title={'Description'}>
           <p>{accommodation.description}</p>
         </Dropdown>
-        <Dropdown open title={'Équipements'}>
+        <Dropdown title={'Équipements'}>
           <p>
             {accommodation.equipments.map((eq, index) => (
               <span key={`equipement-${index}`}>
