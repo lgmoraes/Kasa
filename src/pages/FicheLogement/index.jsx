@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Dropdown from '../../components/Dropdown'
 import Carousel from '../../components/Carousel'
 import User from '../../components/User'
@@ -8,9 +8,10 @@ import datas from '../../api/logement.json'
 function FicheLogement() {
   const { id } = useParams()
   const accommodation = datas.find((data) => data.id === id)
-  const host = accommodation.host
 
-  return (
+  return accommodation === undefined ? (
+    <Navigate to="*" />
+  ) : (
     <div className="ficheLogement">
       <Carousel pictures={accommodation.pictures} />
       <div className="ficheLogement__layoutTop">
@@ -28,7 +29,10 @@ function FicheLogement() {
           </div>
         </div>
         <div className="ficheLogement__layoutTop-2">
-          <User name={host.name} picture={host.picture} />
+          <User
+            name={accommodation.host.name}
+            picture={accommodation.host.picture}
+          />
           <Stars rating={accommodation.rating} />
         </div>
       </div>
