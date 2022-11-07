@@ -4,7 +4,7 @@
   &.open {
     height: auto;
     h2::after {
-        transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
   }
 
@@ -50,5 +50,26 @@
   }
   &__content {
     padding: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    
+    height: $dropdown-height-mobile;
+    margin: $margin-mobile auto;
+    border-radius: nth($border-radius, 3);
+    
+    h2 {
+      &::after {
+        width: 15px;
+        height: 15px;
+      }
+      height: $dropdown-height-mobile;
+
+      font-size: 13px;
+      border-radius: nth($border-radius, 3);
+    }
+    &__content {
+      padding: 0 20px;
+    }
   }
 }

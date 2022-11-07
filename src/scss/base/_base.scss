@@ -68,13 +68,17 @@ body {
   line-height: 142.6%;
 }
 
-.logo {
-  background-image: url(../../assets/logo.svg);
-  background-size: contain;
-}
+/*** RESPONSIVE ***/
 
-.no-scroll {
-  overflow: hidden;
+@include media-breakpoint-down(md) {
+  body {
+    font-size: 12px;
+  }
+
+  .header,
+  .header + div {
+    padding: 0 20px;
+  }
 }
 
 /*** SCREEN READER ***/

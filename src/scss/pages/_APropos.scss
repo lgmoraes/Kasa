@@ -16,4 +16,14 @@
 
     position: relative;
   }
+
+  @include media-breakpoint-down(md) {
+    &__featuredPicture {
+      &::after {
+        border-radius: nth($border-radius, 2);
+      }
+
+      border-radius: nth($border-radius, 2);
+    }
+  }
 }

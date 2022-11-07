@@ -15,9 +15,14 @@
     flex-direction: row;
   }
   a {
-    &:hover, &.active {
+    &:hover,
+    &.active {
       text-decoration: underline;
     }
     margin-left: 2em;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 20px;
   }
 }

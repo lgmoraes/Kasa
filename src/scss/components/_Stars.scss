@@ -7,11 +7,19 @@
   &__star {
     &--empty {
       background: center no-repeat url(../../assets/star-empty.svg);
+      background-size: contain;
     }
     width: $star-size;
     height: $star-size;
 
     background: center no-repeat url(../../assets/star.svg);
     background-size: contain;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__star {
+      width: $star-size-mobile;
+      height: $star-size-mobile;
+    }
   }
 }

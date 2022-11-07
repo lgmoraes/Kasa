@@ -20,12 +20,29 @@
     align-items: center;
 
     h1 {
+      padding: 16px;
+
       color: white;
       font-weight: 500;
       font-size: 48px;
       line-height: 142.6%;
 
       z-index: 1;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    &__featuredPicture {
+      &::after {
+        border-radius: nth($border-radius, 2);
+      }
+
+      height: 111px;
+      border-radius: nth($border-radius, 2);
+
+      h1 {
+        font-size: 24px;
+      }
     }
   }
 }

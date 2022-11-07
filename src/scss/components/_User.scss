@@ -18,4 +18,14 @@
     height: $user-picture-size;
     border-radius: 100%;
   }
+
+  @include media-breakpoint-down(md) {
+    &__name p {
+      font-size: 12px;
+    }
+    &__picture {
+      width: $user-picture-size-mobile;
+      height: $user-picture-size-mobile;
+    }
+  }
 }

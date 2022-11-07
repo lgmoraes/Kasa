@@ -49,4 +49,15 @@
     position: absolute;
     bottom: 0;
   }
+
+  @include media-breakpoint-down(lg) {
+    width: 240px;
+    height: $card-size-mobile;
+    
+    flex-grow: 1;
+    
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
 }

@@ -5,27 +5,32 @@ $color-background: white;
 $font-primary: 'Montserrat', sans-serif;
 
 $margin: 30px;
+$margin-mobile: 20px;
 
-$border-radius: 25px, 10px;
+$border-radius: 25px, 10px, 5px;
 
 $animation-duration: 0.3s;
 
 $breakpoints: (
   sm: 576px,
   md: 768px,
-  lg: 992px,
+  lg: 960px,
   xl: 1440px,
 );
 
 /* COMPONENTS */
 
 $card-size: 340px;
+$card-size-mobile: 255px;
 
 $carousel-height: 415px;
 $carousel-padding: 10px;
 $carousel-arrow-size: 80px;
+$carousel-height-mobile: 255px;
+$carousel-arrow-size-mobile: 20px;
 
 $dropdown-height: 47px;
+$dropdown-height-mobile: 30px;
 
 $featuredPicture-height: 223px;
 
@@ -38,5 +43,7 @@ $logo-width: 210px;
 $logo-height: 68px;
 
 $star-size: 30px;
+$star-size-mobile: 15px;
 
 $user-picture-size: 64px;
+$user-picture-size-mobile: 32px;
