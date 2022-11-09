@@ -1,9 +1,9 @@
 import Card from '../../components/Card'
 
-function Gallery({ cards, className }) {
+function Gallery({ cards }) {
   return (
     <div className="gallery">
-      {cards.map((card, index) => (
+      {cards.map((card) => (
         <Card
           key={`${card.id}-${card.title}`}
           id={card.id}
