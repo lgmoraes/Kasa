@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import texts from '../../api/apropos.json'
 import Dropdown from '../../components/Dropdown'
 
 function APropos() {
+  useEffect(() => {
+    document.title = 'À propos'
+  })
+
   return (
     <div className="apropos">
       <div className="apropos__featuredPicture"></div>

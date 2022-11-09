@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import Dropdown from '../../components/Dropdown'
 import Carousel from '../../components/Carousel'
@@ -8,6 +9,10 @@ import datas from '../../api/logement.json'
 function FicheLogement() {
   const { id } = useParams()
   const accommodation = datas.find((data) => data.id === id)
+
+  useEffect(() => {
+    document.title = `Logement - ${accommodation.title}`
+  })
 
   return accommodation === undefined ? (
     <Navigate to="*" />

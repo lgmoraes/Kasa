@@ -1,7 +1,12 @@
+import { useEffect } from 'react'
 import Gallery from '../../components/Gallery'
 import accommodations from '../../api/logement.json'
 
 function Home() {
+  useEffect(() => {
+    document.title = 'Accueil'
+  })
+
   return (
     <div className="home">
       <div className="home__featuredPicture">
