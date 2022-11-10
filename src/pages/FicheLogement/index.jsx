@@ -11,7 +11,7 @@ function FicheLogement() {
   const accommodation = datas.find((data) => data.id === id)
 
   useEffect(() => {
-    document.title = `Logement - ${accommodation.title}`
+    if (accommodation) document.title = `Logement - ${accommodation.title}`
   })
 
   return accommodation === undefined ? (
