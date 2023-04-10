@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { BASENAME } from '../..'
 
 function Header() {
   return (
@@ -7,12 +8,12 @@ function Header() {
       <nav>
         <NavLink
           className={({ isActive }) => (isActive ? 'active' : undefined)}
-          to="/"
+          to={BASENAME + '/'}
           end
         >
           Accueil
         </NavLink>
-        <NavLink to="/a-propos">A Propos</NavLink>
+        <NavLink to={BASENAME + '/a-propos'}>A Propos</NavLink>
       </nav>
     </header>
   )

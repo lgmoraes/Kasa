@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Card({ id, title, cover }) {
   return (
-    <Link to={`/fiche-logement/${id}`} className="card" key={`${id}-${title}`}>
+    <Link to={`fiche-logement/${id}`} className="card" key={`${id}-${title}`}>
       <img src={cover} alt="logement" />
       <p>{title}</p>
     </Link>

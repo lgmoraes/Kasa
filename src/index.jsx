@@ -9,15 +9,20 @@ import Error404 from './pages/Error404'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
+export const BASENAME = 'Kasa'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/fiche-logement/:id" element={<FicheLogement />}></Route>
-        <Route path="/a-propos" element={<APropos />}></Route>
+      <Routes basename={BASENAME}>
+        <Route path={BASENAME + '/'} element={<Home />}></Route>
+        <Route
+          path={BASENAME + '/fiche-logement/:id'}
+          element={<FicheLogement />}
+        ></Route>
+        <Route path={BASENAME + '/a-propos'} element={<APropos />}></Route>
         <Route path="*" element={<Error404 />}></Route>
       </Routes>
       <Footer />
